@@ -33,7 +33,12 @@ export default () => {
         required
         onChange={handleChange}
       />
-      <input type="number" value={String(value2)} onChange={handleChange2} />
+      <input
+        type="number"
+        value={String(value2)}
+        onChange={handleChange2}
+        step="1"
+      />
       <input type="number" value={value3} onChange={handleChange3} />
     </div>
   )
