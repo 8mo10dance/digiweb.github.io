@@ -38,7 +38,7 @@ export default () => {
         type="number"
         value={String(value2)}
         onChange={handleChange2}
-        step="1"
+        inputmode="numeric"
       />
       <input type="number" value={value3} onChange={handleChange3} />
     </div>
