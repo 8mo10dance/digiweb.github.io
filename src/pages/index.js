@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { TextField } from "@material-ui/core"
 import Header from "../components/header"
 
 export default () => {
@@ -15,10 +16,10 @@ export default () => {
       <Header />
       <p>テストページ</p>
       <img src="https://source.unsplash.com/random/400x200" alt="" />
-      <input
+      <TextField
         type="number"
+        inputProps={{ inputMode: "decimal" }}
         value={value}
-        inputmode="decimal"
         onChange={handleChange}
       />
     </div>
