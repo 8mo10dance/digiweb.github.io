@@ -3,23 +3,10 @@ import { Link } from "gatsby"
 import Header from "../components/header"
 
 export default () => {
-  const [value, setValue] = React.useState(0)
-
-  const [value2, setValue2] = React.useState(0)
-
-  const [value3, setValue3] = React.useState(0)
+  const [value, setValue] = React.useState("0")
 
   const handleChange = event => {
-    console.log(event.target.value)
-    setValue(Number(event.target.value))
-  }
-
-  const handleChange2 = event => {
-    setValue2(Number(event.target.value))
-  }
-
-  const handleChange3 = event => {
-    setValue3(Number(event.target.value))
+    setValue(event.target.value)
   }
 
   return (
@@ -31,23 +18,9 @@ export default () => {
       <input type="text" inputmode="decimal" />
       <input
         type="text"
-        value={String(value)}
+        value={value}
         inputmode="decimal"
         onChange={handleChange}
-      />
-      <input
-        type="number"
-        value={String(value2)}
-        onChange={handleChange2}
-        inputmode="decimal"
-        step="0.1"
-      />
-      <input
-        type="number"
-        value={value3}
-        onChange={handleChange3}
-        inputmode="numeric"
-        step="0.1"
       />
     </div>
   )
