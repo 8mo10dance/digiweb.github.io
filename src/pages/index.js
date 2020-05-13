@@ -38,7 +38,8 @@ export default () => {
         type="number"
         value={String(value2)}
         onChange={handleChange2}
-        inputmode="numeric"
+        inputmode="decimal"
+        step="0.1"
       />
       <input type="number" value={value3} onChange={handleChange3} />
     </div>
