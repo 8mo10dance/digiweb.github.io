@@ -10,6 +10,7 @@ export default () => {
   const [value3, setValue3] = React.useState(0)
 
   const handleChange = event => {
+    console.log(event.target.value)
     setValue(Number(event.target.value))
   }
 
@@ -29,8 +30,7 @@ export default () => {
       <img src="https://source.unsplash.com/random/400x200" alt="" />
       <input
         type="text"
-        value={String(value)}
-        required
+        value={value}
         inputmode="decimal"
         onChange={handleChange}
       />
