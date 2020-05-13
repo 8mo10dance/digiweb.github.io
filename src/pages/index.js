@@ -28,7 +28,7 @@ export default () => {
       <p>テストページ</p>
       <img src="https://source.unsplash.com/random/400x200" alt="" />
       <input
-        type="number"
+        type="text"
         value={String(value)}
         required
         inputmode="decimal"
