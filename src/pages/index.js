@@ -7,7 +7,12 @@ export default () => {
   const [value, setValue] = React.useState("0")
 
   const handleChange = event => {
-    setValue(event.target.value)
+    const nextValue = event.target.value
+      .replace(/^0\./, "A")
+      .replace(/^0/, "")
+      .replace(/^A/, "0.")
+
+    setValue(nextValue)
   }
 
   return (
