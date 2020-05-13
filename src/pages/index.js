@@ -41,7 +41,13 @@ export default () => {
         inputmode="decimal"
         step="0.1"
       />
-      <input type="number" value={value3} onChange={handleChange3} />
+      <input
+        type="number"
+        value={value3}
+        onChange={handleChange3}
+        inputmode="numeric"
+        step="0.1"
+      />
     </div>
   )
 }
