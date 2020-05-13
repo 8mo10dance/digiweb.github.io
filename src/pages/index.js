@@ -31,6 +31,7 @@ export default () => {
         type="number"
         value={String(value)}
         required
+        inputmode="decimal"
         onChange={handleChange}
       />
       <input
