@@ -12,6 +12,8 @@ export default () => {
       .replace(/^0/, "")
       .replace(/^A/, "0.")
 
+    if (nextValue.length > 0 && !nextValue.match(/^\d+\.?\d*$/)) return
+
     setValue(nextValue)
   }
 
@@ -23,9 +25,9 @@ export default () => {
       <img src="https://source.unsplash.com/random/400x200" alt="" />
       <TextField
         type="number"
-        inputProps={{ inputMode: "decimal" }}
-        value={value}
+        value={value || "0"}
         onChange={handleChange}
+        inputProps={{ inputMode: "decimal" }}
       />
     </div>
   )
