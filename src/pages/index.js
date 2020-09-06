@@ -23,6 +23,12 @@ export default () => {
       <Header />
       <p>テストページ</p>
       <img src="https://source.unsplash.com/random/400x200" alt="" />
+      <p>
+        <a href="placeorders://open.home">po</a>
+      </p>
+      <p>
+        <a href="https://www.example.com">aaa</a>
+      </p>
       <TextField
         type="number"
         value={value || "0"}
